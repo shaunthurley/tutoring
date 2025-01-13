@@ -510,6 +510,43 @@
         <p>Ready to set your child up for success? <a href="mailto:dr.shaunhurley@gmail.com?subject=AP Computer Science Tutoring Inquiry" title="Opens email client">
              Email Dr. Hurley</a> to schedule their first session today!</p>
     </footer>
+<div id="cookie-consent-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #222; color: white; padding: 10px; text-align: center;">
+  <p>We use cookies to analyze website traffic and improve your experience. <a href="/privacy-policy.html" style="color: #1e90ff;">Learn more</a>.</p>
+  <button id="accept-cookies" style="background: #1e90ff; color: white; border: none; padding: 10px 15px; cursor: pointer;">Accept</button>
+  <button id="decline-cookies" style="background: #999; color: white; border: none; padding: 10px 15px; cursor: pointer;">Decline</button>
+</div>
 
+<script>
+  document.getElementById('accept-cookies').onclick = function() {
+    document.getElementById('cookie-consent-banner').style.display = 'none';
+    localStorage.setItem('cookieConsent', 'true');
+    loadGoogleAnalytics();
+  };
+  document.getElementById('decline-cookies').onclick = function() {
+    document.getElementById('cookie-consent-banner').style.display = 'none';
+    localStorage.setItem('cookieConsent', 'false');
+  };
+
+  if (localStorage.getItem('cookieConsent') === 'true') {
+    loadGoogleAnalytics();
+    document.getElementById('cookie-consent-banner').style.display = 'none';
+  }
+
+  function loadGoogleAnalytics() {
+    // Google Analytics script
+    (function() {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-8BCB8FS2W2';
+      document.head.appendChild(script);
+      script.onload = function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-8BCB8FS2W2', { anonymize_ip: true });
+      };
+    })();
+  }
+</script>
 </body>
 </html>
