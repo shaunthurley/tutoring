@@ -33,13 +33,13 @@
     box-sizing: border-box;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Cormorant SC', 'Playfair Display', 'Merriweather','Playfair', 'Bodoni Moda', 'Raleway', serif;
     font-weight: 700;
     /* margin: 0; */
 }
 
-h3, h4, h5, h6 {
+h4, h5, h6 {
     font-family: 'Cormorant Garamond', 'Playfair Display', 'Merriweather','Playfair', 'Bodoni Moda', 'Raleway', serif;
     /* font-weight: 500; */
     /* margin: 0; */
@@ -81,7 +81,7 @@ section {
 
 .section-subtitle {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin-bottom: 2rem;
     color: var(--primary);
 }
@@ -455,11 +455,37 @@ nav ul li a:hover {
     border: 1px solid var(--primary-light);
     border-radius: 8px;
     overflow: hidden;
+    position: relative; /* Needed for absolute positioning of hover areas */
 }
 
 .accordion-item {
     border-bottom: 1px solid var(--primary-light);
     transition: box-shadow 0.3s ease;
+    position: relative;
+}
+
+.accordion-item-wrapper {
+    position: relative; 
+}
+
+.accordion-item-wrapper:hover .accordion-header {
+    background-color: var(--primary-light);
+    transform: translateX(4px);
+}
+
+.accordion-item-wrapper:hover .accordion-header::before {
+    opacity: 0.8;
+}
+
+.accordion-hover-area {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw; /* Full viewport width */
+    height: 100%; /* Full height of the accordion item */
+    z-index: 1;
+    pointer-events: none; /* Let clicks pass through */
 }
 
 .accordion-item:hover {
@@ -491,9 +517,9 @@ nav ul li a:hover {
     transform: translateX(4px);
 }
 
-.accordion-header h3 {
-    font-size: 1.25rem;
-    font-weight: 300;
+.accordion-header h4 {
+    font-size: 1.5rem;
+    font-weight: 100;
     margin: 0;
     padding-right: 2rem;
 }
@@ -572,22 +598,23 @@ nav ul li a:hover {
         animation: subtlePulse 2s infinite;
     }
     
-    .accordion-header h3 {
-        font-size: 1.1rem;
+    .accordion-header h4 {
+        font-size: 1.25rem;
+        font-weight: 100;
         padding-right: 1.5rem;
         display: flex;
         align-items: center;
     }
     
     /* Add "tap" icon for mobile */
-    /* .accordion-header h3::after {
+    /* .accordion-header h4::after {
         content: '👆';
         font-size: 1rem;
         margin-left: 8px;
         opacity: 0.9;
     } */
     
-    .accordion-item.active .accordion-header h3::after {
+    .accordion-item.active .accordion-header h4::after {
         display: none;
     }
     
@@ -708,11 +735,11 @@ nav ul li a:hover {
     transform: translateX(10px);
 }
 
-.benefit-content h3 {
+.benefit-content h4 {
     color: var(--primary);
     margin-top: 0;
     margin-bottom: 0.75rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .benefit-content p {
@@ -740,8 +767,8 @@ nav ul li a:hover {
         padding: 1rem;
     }
 
-    .benefit-content h3 {
-        font-size: 1.1rem;
+    .benefit-content h4 {
+        font-size: 1.25rem;
     }
 }
 
@@ -804,10 +831,10 @@ nav ul li a:hover {
     position: relative;
 }
 
-.rate-header h3 {
+.rate-header h4 {
     color: var(--primary);
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .rate-subheader {
@@ -935,7 +962,7 @@ nav ul li a:hover {
     padding: 1.5rem;
 }
 
-.service-header h3 {
+.service-header h4 {
     margin: 0;
     color: white;
     font-size: 1.5rem;
@@ -978,6 +1005,7 @@ nav ul li a:hover {
     color: var(--primary);
     text-align: center;
     margin-bottom: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .policy-cards {
@@ -998,6 +1026,7 @@ nav ul li a:hover {
     color: var(--primary);
     margin-top: 0;
     margin-bottom: 0.75rem;
+    font-size: 1.25rem;
 }
 
 .closing-statement {
@@ -1173,7 +1202,7 @@ footer a {
         line-height: 1.5;
     }
 
-    .benefit-content h3, .service-header h3 {
+    .benefit-content h4, .service-header h4 {
         font-size: 1.2rem;
     }
 
@@ -1187,8 +1216,8 @@ footer a {
         font-size: 1rem;
     }
 
-    .rate-header h3 {
-        font-size: 1.3rem;
+    .rate-header h4 {
+        font-size: 1.5rem;
     }
 
     .rate-price .amount {
