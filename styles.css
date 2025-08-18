@@ -3,7 +3,7 @@
   --primary: #1b365d; /* Navy Blue - trust, intelligence */
   /* #0A2647 */
   --primary-light: #264773;
-  --primary-light-2: #4C8EE6;
+  --primary-light-2: #4c8ee6;
   --accent: #ffb81c; /* Gold - achievement */
   --accent-dark: #e5a61a;
   /* --accent-light: #FFCA55; */
@@ -201,8 +201,8 @@ header {
 
 .header-link {
   text-decoration: none; /* no underline */
-  color: inherit;        /* keeps same color as h2 */
-  cursor: pointer;       /* makes it feel clickable */
+  color: inherit; /* keeps same color as h2 */
+  cursor: pointer; /* makes it feel clickable */
 }
 
 @media (max-width: 768px) {
@@ -379,7 +379,8 @@ nav ul li a:hover {
 
 /* #region Tutoring Header */
 
-#tutoring-header, .header {
+#tutoring-header,
+.header {
   background: linear-gradient(rgba(27, 54, 93, 0.95), rgba(27, 54, 93, 0.9));
   /* min-height: 40vh; */
 }
@@ -410,8 +411,8 @@ nav ul li a:hover {
   padding: 125px 2rem 50px 2rem;
 }
 
-
-#tutoring-header h1, .header h1 {
+#tutoring-header h1,
+.header h1 {
   /* font-family: 'Cormorant SC', 'Playfair Display', serif; */
   font-size: 3.5rem;
   color: var(--white);
@@ -421,7 +422,8 @@ nav ul li a:hover {
   padding: 0;
 }
 
-#tutoring-header p, .header p {
+#tutoring-header p,
+.header p {
   font-size: 1.25rem;
   color: var(--white);
   margin-bottom: 2rem;
@@ -508,7 +510,6 @@ nav ul li a:hover {
 
 /* #region About Dr. Hurley  */
 
-
 /* Mobile-specific styles */
 @media (max-width: 768px) {
   .about-info {
@@ -537,7 +538,7 @@ nav ul li a:hover {
   /* color: var(--primary); */
   font-style: italic;
   /* margin-top: 1.5rem; */
-  padding: 1rem;;
+  padding: 1rem;
   border: 1px solid var(--primary-light);
   border-radius: 10px;
 }
@@ -1248,10 +1249,14 @@ footer a {
   text-decoration: underline;
 }
 
-.page-preview-card { position: relative; } /* To make the entire card clickable */
+.page-preview-card {
+  position: relative;
+} /* To make the entire card clickable */
 /* Nice focus state for keyboard users */
-.stretched-link:focus-visible { outline: none; }
-.learn-more:has(.stretched-link:focus-visible){
+.stretched-link:focus-visible {
+  outline: none;
+}
+.learn-more:has(.stretched-link:focus-visible) {
   outline: 3px solid var(--primary);
   outline-offset: 4px;
 }
@@ -1563,46 +1568,53 @@ footer a {
 
 .hover-card:hover,
 .hover-card:focus-within {
-  transform:translateY(-5px);
-  box-shadow:0 8px 16px rgba(0,0,0,.12);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
-
 /* Make the whole card clickable via a stretched link */
-.article-card { position: relative; }               /* anchor's ::after will fill this */
-.stretched-link { position: static; }               /* keep normal flow */
-.stretched-link::after{
+.article-card {
+  position: relative;
+} /* anchor's ::after will fill this */
+.stretched-link {
+  position: static;
+} /* keep normal flow */
+.stretched-link::after {
   content: "";
   position: absolute;
-  inset: 0;                                         /* cover entire card */
-  border-radius: 8px;                               /* match card rounding */
+  inset: 0; /* cover entire card */
+  border-radius: 8px; /* match card rounding */
 }
 
 /* Nice focus state for keyboard users */
-.stretched-link:focus-visible { outline: none; }
-.available-article:has(.stretched-link:focus-visible){
+.stretched-link:focus-visible {
+  outline: none;
+}
+.available-article:has(.stretched-link:focus-visible) {
   outline: 3px solid var(--primary);
   outline-offset: 4px;
 }
 
 /* Unavailable stays non-clickable/visually muted */
-.unavailable-card .read-more { cursor: not-allowed; text-decoration: none; }
+.unavailable-card .read-more {
+  cursor: not-allowed;
+  text-decoration: none;
+}
 
-
-.unavailable-card{
-  border:1px dashed var(--border);
-  opacity:.9;
+.unavailable-card {
+  border: 1px dashed var(--border);
+  opacity: 0.9;
 }
 /* .unavailable-card .article-category{
   background-color:var(--muted);
 } */
 .unavailable-card h3,
-.unavailable-card .read-more{
-  color:var(--muted);
+.unavailable-card .read-more {
+  color: var(--muted);
 }
-.unavailable-card .read-more{
-  cursor:not-allowed;
-  text-decoration:none;      /* prevent underline hover */
+.unavailable-card .read-more {
+  cursor: not-allowed;
+  text-decoration: none; /* prevent underline hover */
 }
 .read-more {
   color: var(--primary);
@@ -1615,25 +1627,25 @@ footer a {
 }
 
 .available-article:hover,
-.available-article:focus-within{
-  transform:translateY(-5px);
-  box-shadow:0 8px 16px rgba(0,0,0,.12);
+.available-article:focus-within {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
-.unavailable-card{
-  border:1px dashed var(--border);
-  opacity:.9;
+.unavailable-card {
+  border: 1px dashed var(--border);
+  opacity: 0.9;
 }
 /* .unavailable-card .article-category{
   background-color:var(--muted);
 } */
 .unavailable-card h3,
-.unavailable-card .read-more{
-  color:var(--muted);
+.unavailable-card .read-more {
+  color: var(--muted);
 }
-.unavailable-card .read-more{
-  cursor:not-allowed;
-  text-decoration:none;      /* prevent underline hover */
+.unavailable-card .read-more {
+  cursor: not-allowed;
+  text-decoration: none; /* prevent underline hover */
 }
 
 /* .newsletter-signup {
@@ -1716,6 +1728,10 @@ footer a {
     width: 100%;
     max-width: 300px;
   }
+
+  .article-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media (max-width: 900px) {
@@ -1786,7 +1802,6 @@ footer a {
   margin-bottom: 1.5rem;
 }
 
-
 /* Tables for Articles */
 .table-container {
   margin: 2rem 0;
@@ -1803,7 +1818,11 @@ footer a {
 }
 
 .data-table thead {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--primary-light) 100%
+  );
   color: white;
 }
 
@@ -1926,7 +1945,11 @@ code {
 
 /* Article Conclusion Section */
 .conclusion-section {
-  background: linear-gradient(180deg, var(--primary) 0%, var(--primary-light) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--primary) 0%,
+    var(--primary-light) 100%
+  );
   color: white;
   padding: 1rem;
   border-radius: 8px;
@@ -1957,50 +1980,50 @@ code {
     font-size: 2rem;
     padding: 0 1rem;
   }
-  
+
   .article-header p {
     font-size: 1.1rem;
     padding: 0 1rem;
   }
-  
+
   .article-content {
     padding: 0 1rem;
   }
-  
+
   .article-intro {
     font-size: 1rem;
   }
-  
+
   /* .article-section h3 {
     font-size: 1.25rem;
   } */
-  
+
   .table-container {
     margin: 1.5rem -1rem;
   }
-  
+
   .data-table {
     font-size: 0.9rem;
   }
-  
+
   .data-table th,
   .data-table td {
     padding: 10px 8px;
   }
-  
+
   .insight-card,
   .warning-card,
   .myth-card {
     padding: 1rem;
     margin: 1.5rem 0;
   }
-  
+
   .conclusion-section {
     padding: 2rem 1.5rem;
     margin: 2rem -1rem -3rem -1rem;
     border-radius: 0;
   }
-  
+
   .conclusion-section p {
     font-size: 1rem;
   }
