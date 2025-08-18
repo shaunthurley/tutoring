@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Shaun Hurley - AP Computer Science A Tutoring</title>
+    <meta
+      name="description"
+      content="Specialist AP Computer Science A tutoring focused on Java programming and AP exam preparation. Learn from a leader in computer science education."
+    />
+    <meta
+      name="keywords"
+      content="AP Computer Science A, AP CSA, AP Computer Science A tutor, AP CSA tutor, Java programming, AP exam prep, high school computer science tutoring"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@300;400;500;600;700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h2><a href="index.html" class="header-link">Dr. Shaun Hurley</a></h2>
+        <nav>
+          <div class="hamburger-menu">
+            <div class="hamburger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html#about-dr-hurley">About Dr. Hurley</a></li>
+            <li><a href="services.html" class="active">Programs & Rates</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            
+            <li>
+              <a href="mailto:contact@drshaunhurley.com"
+                ><i class="far fa-envelope"></i>
+                <span style="text-decoration: underline"
+                  >Email Dr. Hurley</span
+                ></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="page-header">
+      <div class="container">
+        <div>
+          <h1>Programs & Pricing</h1>
+          <p><em>Choose the level of support that fits your needs</em></p>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="benefits-section">
+        <div class="container" id="benefits">
+          <h2 class="section-title">Mentoring vs. Tutoring</h2>
+          <div class="benefits-intro">
+            <p>
+              When students work with Dr. Hurley on a weekly basis, they receive
+              more than just tutoring — they are mentored.
+            </p>
+            <ul style="text-align: left">
+              <li>
+                <strong>Mentoring</strong> is an ongoing, weekly partnership
+                designed to provide consistent guidance, premium support, and
+                long-term success.
+              </li>
+              <li>
+                <strong>Tutoring</strong>, on the other hand, is ideal for
+                short-term, as-needed assistance.
+              </li>
+            </ul>
+            <p>
+              <i
+                >For the first week, all students — regardless of their tutoring
+                plan — gain access to the full suite of mentorship benefits
+                (outlined below). This allows students to experience the added
+                value of ongoing support, daily engagement, and a community of
+                like-minded learners. After the trial period, students who
+                commit to weekly mentoring will retain these premium benefits,
+                while others can continue with flexible tutoring sessions
+                tailored to their needs.</i
+              >
+            </p>
+          </div>
+          <h3 class="section-subtitle" id="mentoring-benefits">
+            Benefits of Mentoring
+          </h3>
+          <div class="benefits-grid">
+            <div class="benefit-pathway">
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <div class="icon-circle">
+                    <i class="fas fa-users"></i>
+                  </div>
+                </div>
+                <div class="benefit-content">
+                  <h4>Access to a Private Learning Community</h4>
+                  <p>
+                    Students will be invited to join an exclusive online
+                    learning group where they can collaborate with other AP
+                    Computer Science&nbsp;A students, share ideas, and ask
+                    questions in a supportive environment. Parents are welcome
+                    to oversee the group, and students have the option to
+                    participate anonymously if they prefer. Of course, joining
+                    the group is entirely optional.
+                  </p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <div class="icon-circle">
+                    <!-- <i class="fas fa-bullseye"></i> -->
+                    <i class="fa-regular fa-calendar-check"></i>
+                  </div>
+                </div>
+                <div class="benefit-content">
+                  <h4>AP-Style Question of the Day</h4>
+                  <p>
+                    Every day, an AP-style question will be posted in the
+                    private learning community, specifically designed to keep
+                    students engaged and actively practicing key concepts
+                    between sessions. These questions closely mirror the format
+                    and difficulty of the actual AP exam, helping students build
+                    confidence and familiarity with exam-style problems.
+                    Solutions are posted the following day for self-assessment,
+                    reinforcing learning and exam readiness.
+                  </p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <div class="icon-circle">
+                    <!-- <i class="fas fa-clock"></i> -->
+                    <i class="fas fa-headset"></i>
+                  </div>
+                </div>
+                <div class="benefit-content">
+                  <h4>Weekly Office Hours</h4>
+                  <p>
+                    Students will have access to dedicated weekly office hours
+                    for extra drop-in support, clarification, or advice. Office hours
+                    will rotate on a weekly basis to accommodate students with
+                    varying schedules.
+                  </p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <div class="icon-circle">
+                    <i class="fas fa-comments"></i>
+                  </div>
+                </div>
+                <div class="benefit-content">
+                  <h4>Guaranteed Question Support</h4>
+                  <p>
+                    When students get stuck on a question or concept, they can
+                    post it in the private learning community and receive a
+                    guaranteed response from Dr. Hurley within 48 hours (usually
+                    much sooner). Whether it's debugging code or understanding a
+                    tricky concept, students will never feel stuck for too long.
+                  </p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <div class="icon-circle">
+                    <i class="fas fa-user-friends"></i>
+                  </div>
+                </div>
+                <div class="benefit-content">
+                  <h4>Peer Observation Access</h4>
+                  <p>
+                    Students have the option to join the
+                    <em>Peer Observation Access</em> program. By opting in,
+                    students agree to allow other students to observe their
+                    sessions and, in return, gain the opportunity to observe
+                    other students' sessions. Observers remain muted and do not
+                    interact during the entire session, ensuring all sessions
+                    remain focused and productive.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section" id="personalized-support">
+        <div class="container">
+          <h2 class="section-subtitle">Personalized Support</h2>
+          <div class="services-intro">
+            <p>
+              Whether students need mentoring or tutoring, they will
+              receive a level of personalized support that sets them up for
+              success. Dr. Hurley’s approach is built around understanding each
+              student’s unique challenges and goals. His practice is
+              intentionally small, allowing him to provide every student with the
+              individual attention and customized support they deserve. From
+              tackling assignments and mastering key concepts to excelling on
+              the AP exam, every session is tailored to help students thrive
+              academically and build long-term confidence.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <!-- Service Type 1 -->
+            <div class="service-card">
+              <div class="service-header">
+                <h4>Homework Assistance</h4>
+              </div>
+              <div class="service-content">
+                <p>
+                  For students with challenging assignments, Dr. Hurley offers:
+                </p>
+                <ul>
+                  <li>
+                    Clear, step-by-step guidance to approach and complete
+                    homework effectively
+                  </li>
+                  <li>
+                    In-depth explanations to ensure understanding of the
+                    material, not just the answers
+                  </li>
+                  <li>
+                    Tools and strategies to approach similar problems with
+                    confidence in the future
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Service Type 2 -->
+            <div class="service-card">
+              <div class="service-header">
+                <h4>Concept Mastery</h4>
+              </div>
+              <div class="service-content">
+                <p>
+                  For students aiming to build a deeper understanding, Dr.
+                  Hurley provides:
+                </p>
+                <ul>
+                  <li>
+                    A strong foundation in core AP Computer Science&nbsp;A
+                    concepts
+                  </li>
+                  <li>
+                    Advanced exploration of topics for deeper intellectual
+                    growth
+                  </li>
+                  <li>
+                    Real-world connections between theoretical knowledge and
+                    practical applications
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Service Type 3 -->
+            <div class="service-card">
+              <div class="service-header">
+                <h4>AP Exam Excellence</h4>
+              </div>
+              <div class="service-content">
+                <p>
+                  Preparing for the AP exam can be stressful. Dr. Hurley helps
+                  students maximize their scores with:
+                </p>
+                <ul>
+                  <li>A thorough review of all AP exam topics</li>
+                  <li>
+                    Practice with AP-style multiple-choice and free-response
+                    questions
+                  </li>
+                  <li>
+                    Test-taking strategies to improve speed, accuracy, and
+                    confidence
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Service Type 4 -->
+            <div class="service-card">
+              <div class="service-header">
+                <h4>Custom Learning Plans</h4>
+              </div>
+              <div class="service-content">
+                <p>
+                  For students with unique needs, Dr. Hurley will craft a
+                  tailored plan to address needs such as:
+                </p>
+                <ul>
+                  <li>Assistance with special projects or competitions</li>
+                  <li>College placement test preparation</li>
+                  <li>
+                    Strengthening of specific skills to meet personal goals
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container rates-section" id="rates">
+          <h2 class="section-title">Investment in Excellence</h2>
+          <div class="rates-intro">
+            <p>
+              Weekly mentoring offers a discounted rate and access to the
+              exclusive benefits outlined above. Flexible tutoring sessions
+              offer focused, short-term assistance with a rate adjustment
+              after the fifth session.
+            </p>
+          </div>
+          <div class="rates-grid">
+            <div class="rate-card">
+              <div class="rate-header">
+                <h4>Mentoring</h4>
+                <p class="rate-subheader">(Weekly Support)</p>
+              </div>
+              <div class="rate-price">
+                <span class="amount">$150</span>
+                <span class="period">/session</span>
+                <p class="rate-note" style="margin-top: 0">
+                  (1 hour of 1:1 tutoring)
+                </p>
+              </div>
+              <div class="rate-content">
+                <p>
+                  <i class="fa-solid fa-gift"></i>
+                  <a href="#mentoring-benefits">Additional Benefits</a> (no
+                  additional charge):
+                </p>
+                <ul>
+                  <li>Private Learning Community</li>
+                  <li>Daily AP Practice Questions</li>
+                  <li>Weekly Office Hours</li>
+                  <li>Guaranteed Question Support</li>
+                  <li>Peer Observation Program</li>
+                </ul>
+              </div>
+              
+            </div>
+            <div class="rate-card">
+              <div class="rate-header">
+                <h4>Tutoring</h4>
+                <p class="rate-subheader">(Occasional Support)</p>
+              </div>
+              <div class="rate-price">
+                <span class="amount">$175</span>
+                <span class="period">/session</span>
+                <p class="rate-note" style="margin-top: 0">
+                  (1 hour of 1:1 tutoring)
+                </p>
+              </div>
+              <div class="rate-content">
+                <p>Perfect for:</p>
+                <ul>
+                  <li>Test Preparation</li>
+                  <li>Project Help</li>
+                  <li>Concept Review</li>
+                  <li>One-time Sessions</li>
+                </ul>
+                <p class="rate-note">
+                  After your fifth session, the rate adjusts to
+                  <strong>$150/hour</strong>*
+                </p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="rates-footer">
+            <p>
+              * The benefits that come with mentoring will remain exclusive to
+              students receiving weekly support.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- Policies Section -->
+        <div class="policies-section">
+          <h3>A Focus on Integrity and Growth</h3>
+          <p>
+            Dr. Hurley’s services are grounded in fostering genuine learning and
+            academic success. Parents can rest assured that every session
+            is conducted with the highest standards of academic integrity.
+          </p>
+          <div class="policy-cards">
+            <div class="policy-card">
+              <h4>Homework Policy</h4>
+              <p>
+                Dr. Hurley respects classroom policies and works within any
+                guidelines provided by students' teachers. Students are
+                responsible for communicating these expectations.
+              </p>
+            </div>
+
+            <div class="policy-card">
+              <h4>Student Ownership</h4>
+              <p>
+                Sessions are designed to equip students with the skills to
+                succeed independently, not to complete assignments for them.
+              </p>
+            </div>
+
+            <div class="policy-card">
+              <h4>Collaboration and Trust</h4>
+              <p>
+                Trust and honesty are central to this partnership. Students are
+                expected to communicate openly about their classroom
+                expectations and academic needs.
+              </p>
+            </div>
+          </div>
+          <p class="closing-statement">
+            By working together, students will build the confidence, skills, and
+            knowledge needed to succeed.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="">
+        <div class="container">
+          <h2>Ready to Excel in AP Computer Science&nbsp;A?</h2>
+          <p>
+            Join successful students who have earned 5s on their AP exams and
+            gone on to top computer science programs.
+          </p>
+          <div class="cta-buttons">
+
+            <a
+              href="mailto:contact@drshaunhurley.com?subject=AP Computer Science Tutoring Inquiry"
+              class="cta-button"
+              title="Opens email client"
+            >
+              <i class="far fa-envelope"></i> Request a Session</a
+            >
+
+          </div>
+        </div>
+      </section>
+
+    </footer>
+
+  </body>
+</html>
