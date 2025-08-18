@@ -52,6 +52,18 @@ h6 {
   /* margin: 0; */
 }
 
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.35rem;
+}
+
 body {
   font-family: "Open Sans", "Source Sans 3", sans-serif;
   /* font-family: 'Avenir', sans-serif; */
@@ -93,7 +105,7 @@ li {
 .section-title {
   /* font-family: 'Playfair Display', serif; */
   text-align: center;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   margin-bottom: 2rem;
   color: var(--primary);
 }
@@ -183,7 +195,7 @@ header {
   z-index: 10;
   padding: 0 15px;
   font-weight: 500;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
   margin: 0;
 }
 
@@ -495,190 +507,12 @@ nav ul li a:hover {
 /* #endregion */
 
 /* #region About Dr. Hurley  */
-.accordion {
-  max-width: 800px;
-  margin: 20px auto;
-  border: 1px solid var(--primary-light);
-  border-radius: 8px;
-  overflow: hidden;
-  position: relative; /* Needed for absolute positioning of hover areas */
-}
 
-.accordion-item {
-  border-bottom: 1px solid var(--primary-light);
-  transition: box-shadow 0.3s ease;
-  position: relative;
-}
-
-.accordion-item-wrapper {
-  position: relative;
-}
-
-.accordion-item-wrapper:hover .accordion-header {
-  background-color: var(--primary-light);
-  transform: translateX(4px);
-}
-
-.accordion-item-wrapper:hover .accordion-header::before {
-  opacity: 0.8;
-}
-
-.accordion-hover-area {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw; /* Full viewport width */
-  height: 100%; /* Full height of the accordion item */
-  z-index: 1;
-  pointer-events: none; /* Let clicks pass through */
-}
-
-.accordion-item:hover {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.accordion-item:last-child {
-  border-bottom: none;
-}
-
-.accordion-header {
-  width: 100%;
-  background-color: var(--primary);
-  color: var(--white);
-  padding: 1rem 1.5rem;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  transform: translateX(0);
-}
-
-.accordion-header:hover {
-  background-color: var(--primary-light);
-  transform: translateX(4px);
-}
-
-.accordion-header h4 {
-  font-size: 1.5rem;
-  font-weight: 100;
-  margin: 0;
-  padding-right: 2rem;
-}
-
-.accordion-header::before {
-  content: "Click to expand";
-  position: absolute;
-  right: 3.5rem;
-  font-size: 0.9rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  font-style: italic;
-  font-weight: 300;
-}
-
-.accordion-header:hover::before {
-  opacity: 0.8;
-}
-
-.accordion-item.active .accordion-header::before {
-  opacity: 0;
-}
-
-.accordion-header::after {
-  content: "+";
-  font-size: 1.75rem;
-  font-weight: 300;
-  min-width: 24px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.accordion-header:hover {
-  background-color: var(--primary-light);
-}
-
-.accordion-item.active .accordion-header::after {
-  content: "−";
-  transform: rotate(180deg);
-}
-
-.accordion-content {
-  background-color: var(--white);
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-  opacity: 0;
-  height: 0;
-}
-
-.accordion-content-inner {
-  padding: 1.5rem;
-}
-
-.accordion-item.active .accordion-content {
-  opacity: 1;
-}
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
   .about-info {
     text-align: center;
-  }
-
-  .accordion-header::before {
-    display: none;
-  }
-
-  .accordion-header {
-    padding: 1rem 1.25rem;
-    position: relative;
-    background: linear-gradient(to right, var(--primary), var(--primary-light));
-  }
-
-  /* Add a subtle pulse animation to the first unopened item */
-  .accordion-item:not(.active):first-child .accordion-header {
-    animation: subtlePulse 2s infinite;
-  }
-
-  .accordion-header h4 {
-    font-size: 1.25rem;
-    font-weight: 100;
-    padding-right: 1.5rem;
-    display: flex;
-    align-items: center;
-  }
-
-  /* Add "tap" icon for mobile */
-  /* .accordion-header h4::after {
-        content: '👆';
-        font-size: 1rem;
-        margin-left: 8px;
-        opacity: 0.9;
-    } */
-
-  .accordion-item.active .accordion-header h4::after {
-    display: none;
-  }
-
-  .accordion-header::after {
-    font-size: 1.5rem;
-  }
-
-  /* Add instruction text for first-time mobile users */
-  .accordion:before {
-    content: "Tap sections below to expand";
-    display: block;
-    text-align: center;
-    padding: 0.5rem;
-    background-color: var(--primary-light);
-    color: white;
-    font-size: 0.9rem;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
   }
 }
 
@@ -698,6 +532,15 @@ nav ul li a:hover {
 /* #endregion */
 
 /* #region Benefits */
+#first-week-offer {
+  /* font-size: 0.9rem; */
+  /* color: var(--primary); */
+  font-style: italic;
+  /* margin-top: 1.5rem; */
+  padding: 1rem;;
+  border: 1px solid var(--primary-light);
+  border-radius: 10px;
+}
 
 .benefits-section {
   background-color: var(--background);
@@ -785,7 +628,7 @@ nav ul li a:hover {
   color: var(--primary);
   margin-top: 0;
   margin-bottom: 0.75rem;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .benefit-content p {
@@ -813,9 +656,9 @@ nav ul li a:hover {
     padding: 1rem;
   }
 
-  .benefit-content h4 {
+  /* .benefit-content h4 {
     font-size: 1.25rem;
-  }
+  } */
 }
 
 /* #endregion */
@@ -880,7 +723,7 @@ nav ul li a:hover {
 .rate-header h4 {
   color: var(--primary);
   margin: 0;
-  font-size: 1.75rem;
+  /* font-size: 1.75rem; */
 }
 
 .rate-subheader {
@@ -1011,7 +854,7 @@ nav ul li a:hover {
 .service-header h4 {
   margin: 0;
   color: white;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   font-weight: 300;
 }
 
@@ -1051,7 +894,7 @@ nav ul li a:hover {
   color: var(--primary);
   text-align: center;
   margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .policy-cards {
@@ -1072,7 +915,7 @@ nav ul li a:hover {
   color: var(--primary);
   margin-top: 0;
   margin-bottom: 0.75rem;
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
 }
 
 .closing-statement {
@@ -1254,9 +1097,9 @@ footer a {
   }
 
   .benefit-content h4,
-  .service-header h4 {
+  /* .service-header h4 {
     font-size: 1.2rem;
-  }
+  } */
 
   .benefit-content p,
   .service-content p {
@@ -1269,9 +1112,9 @@ footer a {
     font-size: 1rem;
   }
 
-  .rate-header h4 {
+  /* .rate-header h4 {
     font-size: 1.5rem;
-  }
+  } */
 
   .rate-price .amount {
     font-size: 2rem;
@@ -2128,9 +1971,9 @@ code {
     font-size: 1rem;
   }
   
-  .article-section h3 {
+  /* .article-section h3 {
     font-size: 1.25rem;
-  }
+  } */
   
   .table-container {
     margin: 1.5rem -1rem;
