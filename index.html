@@ -1,550 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Shaun Hurley - AP Computer Science A Tutoring</title>
-    <meta name="description" content="Specialist AP Computer Science A tutoring focused on Java programming and AP exam preparation. Learn from a leader in computer science education.">
-    <meta name="keywords" content="AP Computer Science A, AP CSA, AP Computer Science A tutor, AP CSA tutor, Java programming, AP exam prep, high school computer science tutoring">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <meta
+      name="description"
+      content="Specialist AP Computer Science A tutoring focused on Java programming and AP exam preparation. Learn from a leader in computer science education."
+    />
+    <meta
+      name="keywords"
+      content="AP Computer Science A, AP CSA, AP Computer Science A tutor, AP CSA tutor, Java programming, AP exam prep, high school computer science tutoring"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png" />
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Slick Carousel CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
-    
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@300;400;500;600;700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-<!--     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BCB8FS2W2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-8BCB8FS2W2');
-    </script> -->
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@300;400;500;600;700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div id="header-content">
-            <h2>Dr. Shaun Hurley</h2>
-            <nav>
-    <div class="hamburger-menu">
-        <div class="hamburger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    <ul class="nav-menu">
-        <li><a href="#about">About Dr. Hurley</a></li>
-        <li><a href="#benefits">Mentoring vs. Tutoring</a></li>
-        <li><a href="#rates">Rates</a></li>
-        <li><a href="#personalized-support">Personalized Support</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="mailto:contact@drshaunhurley.com"><i class="far fa-envelope"></i> <span style="text-decoration: underline;">Email Dr. Hurley</span></a></li>
-    </ul>
-</nav>
-        </div>
+      <div class="header-content">
+        <h2><a href="index.html" class="header-link">Dr. Shaun Hurley</a></h2>
+        <nav>
+          <div class="hamburger-menu">
+            <div class="hamburger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="nav-menu">
+            <li>
+              <a href="#about-dr-hurley" class="active">About Dr. Hurley</a>
+            </li>
+
+            <li><a href="services.html">Programs & Rates</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li>
+              <a href="mailto:contact@drshaunhurley.com"
+                ><i class="far fa-envelope"></i>
+                <span style="text-decoration: underline"
+                  >Email Dr. Hurley</span
+                ></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <div id="tutoring-header">
-        <div id="tutoring-header-wrapper">
-            <div id="tutoring-header-content">
-                <h1>AP Computer Science Specialist</h1>
-                <p><em>Empowering students to excel in AP Computer Science&nbsp;A</em></p>
-                <!-- <a href="#contact" class="cta-button">Schedule Your Session</a> -->
-                <a href="mailto:contact@drshaunhurley.com?subject=AP Computer Science Tutoring Inquiry" class="cta-button" title="Opens email client"> <i class="far fa-envelope"></i> Request a Session</a>
+      <div id="tutoring-header-wrapper">
+        <div id="tutoring-header-content">
+          <h1>AP Computer Science Specialist</h1>
+          <p>
+            <em>Empowering students to excel in AP Computer Science&nbsp;A</em>
+          </p>
 
-            </div>
-            <img src="images/Shaun Hurley-6188-Resized copy.png" alt="Dr. Shaun Hurley" id="tutoring-header-image">
+          <a
+            href="mailto:contact@drshaunhurley.com?subject=AP Computer Science Tutoring Inquiry"
+            class="cta-button"
+            title="Opens email client"
+          >
+            <i class="far fa-envelope"></i> Request a Session</a
+          >
         </div>
+        <img
+          src="images/Shaun Hurley-6188-Resized copy.png"
+          alt="Dr. Shaun Hurley"
+          id="tutoring-header-image"
+        />
+      </div>
     </div>
     <main>
-        <section class="about-section" id="about">
-            <div class="container">
-                <h2 class="section-title">About Dr. Hurley</h2>
-                <p class="about-info">With 15+ years of teaching experience and a deep commitment to student success, Dr. Hurley brings unparalleled expertise to every session. His unique blend of educational and technical backgrounds, combined with his focused research on effective AP Computer Science&nbsp;A instruction, allows him to guide students to mastery. Here's why parents trust him:</p>
+      <!-- Quick Overview Section -->
+      <section class="overview-section">
+        <div class="container">
+          <p class="overview-intro">
+            Drawing on nearly <strong>two decades</strong> of experience in
+            education and his doctoral research on AP Computer Science&nbsp;A
+            education, Dr. Hurley provides unparalleled online tutoring that
+            helps students master Java programming and excel on the AP exam.
+          </p>
+          <div class="pages-preview">
+            <div class="page-preview-card hover-card">
+              <div class="icon-circle"><i class="fas fa-laptop-code"></i></div>
+              <h3>Services & Pricing</h3>
+              <p>Personalized support, flexible scheduling, and clear rates.</p>
+              <a href="services.html" class="learn-more stretched-link"
+                >Learn More →</a
+              >
             </div>
-            <div class="container">
-                <div class="accordion">
-                    <!-- Doctoral Research in AP CSA -->
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <h4>Focused Doctoral Research on AP Computer Science&nbsp;A</h4>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                            <p>Dr. Hurley's dissertation explored innovative approaches for students to engage with <strong>AP Computer Science&nbsp;A</strong> material, aiming to identify and refine effective teaching strategies. You can review his work <a href="https://ufdc.ufl.edu/en/UFE0055616/00001/citation" target="_blank">here</a>.</p>
-                        </div>
-                        </div>
-                    </div>
-                    <!-- Expert in CS Education -->
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <h4>Expert in Computer Science Education</h4>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <!-- <p>Dr. Hurley's reach has extended far beyond his own classroom by working to help train teachers in computer science education.</p> -->
-                                <ul>
-                                    <li>Key member in the design and development of University of Florida's <a href="https://education.ufl.edu/computer-science-education/prospective-students/computer-science-k-12-teaching-graduate-certificate/" target="_blank">Computer Science K-12 Teaching Graduate Certificate</a></li>
-                                    <li>Computer Science Assessment Coordinator for <a href="https://cseveryonecenter.org" target="_blank">CSEveryone</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Recognized Leader in Education -->
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <h4>Recognized Leader in Education</h4>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <ul>
-                                    <li>Recognized by Apple as an <a href="https://www.apple.com/education/k12/apple-distinguished-educator/" target="_blank">Apple Distinguished Educator</a></li>
-                                    <li>Department Chair of Computer Science & Mathematics and Director of Educational Technology at <a href="https://www.steds.org" target="_blank">Saint Edward's School</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Extensive Teaching Experience -->
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <h4>Extensive Teaching Experience</h4>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <ul>
-                                    <li><strong>15+ years of experience</strong> teaching computer science, math, and physics in public & independent high schools</li>
-                                    <li><strong>Adjunct professor</strong> for University of Florida's <em>K-12 Computer Programming Foundations</em> course</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Trusted by Universities -->
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <h4>Trusted by Universities</h4>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <ul>
-                                    <li>Instructional Technologist for the <strong>University of Florida</strong></li>
-                                    <li>Instructional Designer Contractor for the <strong>University of North Carolina @ Chapel Hill</strong></li>
-                                    <li>Instructional Designer Consultant for <strong>Skidmore College</strong></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Accomplished Presenter -->
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <h4>Accomplished Presenter at Major Educational Conferences</h4>
-                        </button>
-                        <div class="accordion-content"> 
-                            <div class="accordion-content-inner">
-                                <ul>
-                                    <li><strong><a href="https://csteachers.org/pd-opportunities/csta-annual-conference/" target="_blank">CSTA</a></strong> (Computer Science Teachers Association)</li>
-                                    <li><strong><a href="https://conference.iste.org" target="_blank">ISTE</a></strong> (International Society for Technology in Education)</li>
-                                    <li><strong><a href="https://www.fetc.org" target="_blank">FETC</a></strong> (Future of Education Technology Conference)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Educational Background -->
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <h4>Unique Blend of Educational & Technical Backgrounds</h4>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <p>Dr. Hurley’s diverse educational background combines expertise in both education and technical disciplines, providing a well-rounded foundation to guide students in mastering complex concepts. His credentials include:</p>
-                                <ul>
-                                    <li><strong>Ed.D. in Curriculum & Instruction</strong> from the University of Florida</li>
-                                    <li><strong>M.S. in Civil Engineering</strong> from Florida Atlantic University</li>
-                                    <li><strong>B.S. in Physics</strong> from the State University of New York at Oneonta</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="benefits-section">
-            <div class="container" id="benefits">
-                <h2 class="section-title">Mentoring vs. Tutoring</h2>
-                <div class="benefits-intro">
-                    <p>When students work with Dr. Hurley on a weekly basis, they receive more than just tutoring — they are mentored.</p>
-                    <ul style="text-align: left;">
-                        <li><strong>Mentoring</strong> is an ongoing, weekly partnership designed to provide consistent guidance, premium support, and long-term success.</li>
-                        <li><strong>Tutoring</strong>, on the other hand, is ideal for short-term, as-needed assistance.</li>
-                    </ul>
-                    <p>For the first week, all students — regardless of their tutoring plan — gain access to the full suite of mentorship benefits (outlined below). This allows students to experience the added value of ongoing support, daily engagement, and a community of like-minded learners. After the trial period, students who commit to weekly mentoring will retain these premium benefits, while others can continue with flexible tutoring sessions tailored to their needs.</p>
-                </div>
-                <h3 class="section-subtitle" id="mentoring-benefits">Benefits of Mentoring</h3>
-                <div class="benefits-grid">
-                    <div class="benefit-pathway">
-                        <div class="benefit-item">
-                            <div class="benefit-icon">
-                                <div class="icon-circle">
-                                    <i class="fas fa-users"></i>
-                                </div>
-                            </div>
-                            <div class="benefit-content">
-                                <h4>Access to a Private Learning Community</h4>
-                                <p>Students will be invited to join an exclusive online learning group where they can collaborate with other AP Computer Science&nbsp;A students, share ideas, and ask questions in a supportive environment. Parents are welcome to oversee the group, and students have the option to participate anonymously if they prefer. Of course, joining the group is entirely optional.</p>
-                            </div>
-                        </div>
-        
-                        <div class="benefit-item">
-                            <div class="benefit-icon">
-                                <div class="icon-circle">
-                                    <!-- <i class="fas fa-bullseye"></i> -->
-                                    <i class="fa-regular fa-calendar-check"></i>
-                                </div>
-                            </div>
-                            <div class="benefit-content">
-                                <h4>AP-Style Question of the Day</h4>
-                                <p>Every day, an AP-style question will be posted in the private learning community, specifically designed to keep students engaged and actively practicing key concepts between sessions. These questions closely mirror the format and difficulty of the actual AP exam, helping students build confidence and familiarity with exam-style problems. Solutions are posted the following day for self-assessment, reinforcing learning and exam readiness.</p>
-                            </div>
-                        </div>
-        
-                        <div class="benefit-item">
-                            <div class="benefit-icon">
-                                <div class="icon-circle">
-                                    <!-- <i class="fas fa-clock"></i> -->
-                                    <i class="fas fa-headset"></i>
-                                </div>
-                            </div>
-                            <div class="benefit-content">
-                                <h4>Weekly Office Hours</h4>
-                                <p>Students will have access to a dedicated weekly office hour for extra support, clarification, or advice. Office hours will rotate on a weekly basis to accommodate students with varying schedules.</p>
-                            </div>
-                        </div>
-        
-                        <div class="benefit-item">
-                            <div class="benefit-icon">
-                                <div class="icon-circle">
-                                    <i class="fas fa-comments"></i>
-                                </div>
-                            </div>
-                            <div class="benefit-content">
-                                <h4>Guaranteed Question Support</h4>
-                                <p>When students get stuck on a question or concept, they can post it in the private learning community and receive a guaranteed response from Dr. Hurley within 48 hours (usually much sooner). Whether it's debugging code or understanding a tricky concept, students will never feel stuck for too long.</p>
-                            </div>
-                        </div>
-        
-                        <div class="benefit-item">
-                            <div class="benefit-icon">
-                                <div class="icon-circle">
-                                    <i class="fas fa-user-friends"></i>
-                                </div>
-                            </div>
-                            <div class="benefit-content">
-                                <h4>Peer Observation Access</h4>
-                                <p>Students have the option to join the <em>Peer Observation Access</em> program. By opting in, students agree to allow other students to observe their sessions and, in return, gain the opportunity to observe other students' sessions. Observers remain muted and do not interact during the entire session, ensuring all sessions remain focused and productive.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container rates-section" id="rates">
-                <h3 class="section-subtitle">Investment in Excellence</h3>
-                <div class="rates-intro">
-                    <p>Weekly mentoring offers a discounted rate and access to the exclusive benefits outlined above. Flexible tutoring sessions provide focused, short-term assistance with a rate adjustment after the fifth session.</p>
-                </div>
-                <div class="rates-grid">
-                    <div class="rate-card">
-                        <div class="rate-header">
-                            <h4>Mentoring</h4>
-                            <p class="rate-subheader">(Weekly Support)</p>
-                        </div>
-                        <div class="rate-price">
-                            <span class="amount">$150</span>
-                            <span class="period">/session</span>
-                            <p class="rate-note" style="margin-top:0;">(1 hour of 1:1 tutoring)</p>
-                        </div>
-                        <div class="rate-content">
-                            <p><i class="fa-solid fa-gift"></i> <a href="#mentoring-benefits">Additional Benefits</a> (no additional charge):</p>
-                            <ul>
-                                <li>Private Learning Community</li>
-                                <li>Daily AP Practice Questions</li>
-                                <li>Weekly Office Hours</li>
-                                <li>Guaranteed Question Support</li>
-                                <li>Peer Observation Program</li>
-                            </ul>
-                        </div>
-                        <!-- <a href="mailto:contact@drshaunhurley.com" class="cta-button">Get Started</a> -->
-                    </div>
-                    <div class="rate-card">
-                        <div class="rate-header">
-                            <h4>Tutoring</h4>
-                            <p class="rate-subheader">(Occasional Support)</p>
-                        </div>
-                        <div class="rate-price">
-                            <span class="amount">$175</span>
-                            <span class="period">/session</span>
-                            <p class="rate-note" style="margin-top:0;">(1 hour of 1:1 tutoring)</p>
-                        </div>
-                        <div class="rate-content">
-                            <p>Perfect for:</p>
-                            <ul>
-                                <li>Test Preparation</li>
-                                <li>Project Help</li>
-                                <li>Concept Review</li>
-                                <li>One-time Sessions</li>
-                            </ul>
-                            <p class="rate-note">After your fifth session, the rate adjusts to <strong>$150/hour</strong>*</p>
-                        </div>
-                        <!-- <a href="mailto:contact@drshaunhurley.com" class="cta-button">Book a Session</a> -->
-                    </div>
-                </div>
-                <div class="rates-footer">
-                    <p>* The benefits that come with mentoring will remain exclusive to students receiving weekly support.</p>
-                </div>
-            </div>
-        </section>
 
-        <section class="services-section" id="personalized-support">
-            <div class="container">
-                <h2 class="section-title">Personalized Support</h2>
-                <div class="services-intro">
-                    <p>Whether students' needs are mentoring or tutoring, they will receive a level of personalized support that sets them up for success. Dr. Hurley’s approach is built around understanding each student’s unique challenges and goals. His practice is intentionally small so he can provide every student with the individual attention and customized support they deserve. From tackling assignments and mastering key concepts to excelling on the AP exam, every session is tailored to help students thrive academically and build long-term confidence.</p>
-                </div>
-        
-                <div class="services-grid">
-                    <!-- Service Type 1 -->
-                    <div class="service-card">
-                        <div class="service-header">
-                            <h4>Homework Assistance</h4>
-                        </div>
-                        <div class="service-content">
-                            <p>For students with challenging assignments, Dr. Hurley offers:
-                            </p>
-                            <ul>
-                                <li>Clear, step-by-step guidance to approach and complete homework effectively</li>
-                                <li>In-depth explanations to ensure understanding of the material, not just the answers</li>
-                                <li>Tools and strategies to approach similar problems with confidence in the future</li>
-                            </ul>
-                        </div>
-                    </div>
-        
-                    <!-- Service Type 2 -->
-                    <div class="service-card">
-                        <div class="service-header">
-                            <h4>Concept Mastery</h4>
-                        </div>
-                        <div class="service-content">
-                            <p>For students aiming to build a deeper understanding, Dr. Hurley provides:</p>
-                            <ul>
-                                <li>A strong foundation in core AP Computer Science&nbsp;A concepts</li>
-                                <li>Advanced exploration of topics for deeper intellectual growth</li>
-                                <li>Real-world connections between theoretical knowledge and practical applications</li>
-                            </ul>
-                        </div>
-                    </div>
-        
-                    <!-- Service Type 3 -->
-                    <div class="service-card">
-                        <div class="service-header">
-                            <h4>AP Exam Excellence</h4>
-                        </div>
-                        <div class="service-content">
-                            <p>Preparing for the AP exam can be stressful. Dr. Hurley helps students maximize their scores with:</p>
-                            <ul>
-                                <li>A thorough review of all AP exam topics</li>
-                                <li>Practice with AP-style multiple-choice and free-response questions</li>
-                                <li>Test-taking strategies to improve speed, accuracy, and confidence</li>
-                            </ul>
-                        </div>
-                    </div>
-        
-                    <!-- Service Type 4 -->
-                    <div class="service-card">
-                        <div class="service-header">
-                            <h4>Custom Learning Plans</h4>
-                        </div>
-                        <div class="service-content">
-                            <p>For students with unique needs, Dr. Hurley will craft a tailored plan to address needs such as:</p>
-                            <ul>
-                                <li>Assistance with special projects or competitions</li>
-                                <li>College placement test preparation</li>
-                                <li>Strengthening of specific skills to meet personal goals</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-        
-        
-                <!-- Policies Section -->
-                <div class="policies-section">
-                    <h3>A Focus on Integrity and Growth</h3>
-                    <p>Dr. Hurley’s services are grounded in fostering genuine learning and academic success. Parents can rest assured that every session prioritizes the highest standards of academic integrity.</p>
-                    
-                    <div class="policy-cards">
-                        <div class="policy-card">
-                            <h4>Homework Policy</h4>
-                            <p>Dr. Hurley respects classroom policies and works within any guidelines provided by students' teachers. Students are responsible for communicating these expectations.</p>
-                        </div>
-        
-                        <div class="policy-card">
-                            <h4>Student Ownership</h4>
-                            <p>Sessions are designed to equip students with the skills to succeed independently, not to complete assignments for them.</p>
-                        </div>
-        
-                        <div class="policy-card">
-                            <h4>Collaboration and Trust</h4>
-                            <p>Trust and honesty are central to this partnership. Students are expected to communicate openly about their classroom expectations and academic needs.</p>
-                        </div>
-                    </div>
-        
-                    <p class="closing-statement">By working together, students will build the confidence, skills, and knowledge needed to succeed.</p>
-                </div>
+            <div class="page-preview-card hover-card">
+              <div class="icon-circle"><i class="fas fa-lightbulb"></i></div>
+              <h3>Resources</h3>
+              <p>
+                Free tips, guides, and insights to strengthen your Java skills.
+              </p>
+              <a href="resources.html" class="learn-more stretched-link"
+                >Learn More →</a
+              >
             </div>
-        </section>
-        
-        <section class="testimonials-section" id="testimonials">
-            <div class="container">
-                <h2 class="section-title">Testimonials</h2>
-                <p>See what students have to say about Dr. Hurley.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Temp -->
+      <section class="benefits-section">
+        <div class="container" id="about-dr-hurley">
+          <h2 class="section-title">
+            Why Parents & Students Choose Dr. Hurley
+          </h2>
+          <div class="benefits-grid">
+            <div class="benefit-pathway">
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <div class="icon-circle">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                </div>
+                <div class="benefit-content">
+                  <h4>
+                    Focused Doctoral Research on AP Computer Science&nbsp;A
+                  </h4>
+                  <p>
+                    Dr. Hurley's dissertation explored innovative approaches for
+                    students to engage with
+                    <strong>AP Computer Science&nbsp;A</strong> material, aiming
+                    to identify and refine effective teaching strategies. You
+                    can review his work
+                    <a
+                      href="https://ufdc.ufl.edu/en/UFE0055616/00001/citation"
+                      target="_blank"
+                      >here</a
+                    >.
+                  </p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <div class="icon-circle">
+                    <!-- <i class="fas fa-bullseye"></i> -->
+                    <i class="fas fa-chalkboard-teacher"></i>
+                  </div>
+                </div>
+                <div class="benefit-content">
+                  <h4>Expert in Computer Science Education</h4>
+                  <ul>
+                    <li>
+                      Key member in the design and development of University of
+                      Florida's
+                      <a
+                        href="https://education.ufl.edu/computer-science-education/prospective-students/computer-science-k-12-teaching-graduate-certificate/"
+                        target="_blank"
+                        >Computer Science K-12 Teaching Graduate Certificate</a
+                      >
+                    </li>
+                    <li>
+                      Computer Science Assessment Coordinator for
+                      <a href="https://cseveryonecenter.org" target="_blank"
+                        >CSEveryone</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <div class="icon-circle">
+                    <!-- <i class="fas fa-clock"></i> -->
+                    <i class="fas fa-award"></i>
+                  </div>
+                </div>
+                <div class="benefit-content">
+                  <h4>Recognized Leader & Presenter in Education</h4>
+                  <ul>
+                    <li>
+                      Recognized by Apple as an
+                      <a
+                        href="https://www.apple.com/education/k12/apple-distinguished-educator/"
+                        target="_blank"
+                        >Apple Distinguished Educator</a
+                      >
+                    </li>
+                    <li>
+                      Former Department Chair of Computer Science & Mathematics
+                      and Director of Educational Technology at
+                      <a href="https://www.steds.org" target="_blank"
+                        >Saint Edward's School</a
+                      >
+                    </li>
+                    <li>
+                      Presenter at major educational conferences, including:
+                      <ul>
+                        <li>
+                          <a
+                            href="https://csteachers.org/pd-opportunities/csta-annual-conference/"
+                            target="_blank"
+                            >CSTA</a
+                          >
+
+                          (Computer Science Teachers Association)
+                        </li>
+                        <li>
+                          <a href="https://conference.iste.org" target="_blank"
+                            >ISTE</a
+                          >
+                          (International Society for Technology in Education)
+                        </li>
+                        <li>
+                          <a href="https://www.fetc.org" target="_blank"
+                            >FETC</a
+                          >
+                          (Future of Education Technology Conference)
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <div class="icon-circle">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                </div>
+                <div class="benefit-content">
+                  <h4>Extensive Experience Working Directly With Students</h4>
+                  <ul>
+                    <li>
+                      <strong>Over 15 years of experience</strong> teaching
+                      computer science, math, and physics in public &
+                      independent high schools
+                    </li>
+                    <li>
+                      <strong>Adjunct professor</strong> for the University of
+                      Florida:
+                      <em>K-12 Computer Programming Foundations</em> course
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <div class="icon-circle">
+                    <i class="fas fa-university"></i>
+                  </div>
+                </div>
+                <div class="benefit-content">
+                  <h4>Trusted by Universities & Industry Leaders</h4>
+                  <ul>
+                    <li>
+                      Instructional Technologist for the
+                      <strong>University of Florida</strong>
+                    </li>
+                    <li>
+                      Instructional Designer Contractor for the
+                      <strong
+                        >University of North Carolina @ Chapel Hill</strong
+                      >
+                    </li>
+                    <li>
+                      Instructional Designer Consultant for
+                      <strong>Skidmore College</strong>
+                    </li>
+                    <li>
+                      Collaborated with
+                      <strong>Tableau</strong>
+                      and
+                      <strong>Coursera</strong>
+                      to develop the
+                      <a
+                        href="https://www.coursera.org/professional-certificates/tableau-business-intelligence-analyst"
+                        target="_blank"
+                        >Business Intelligence Analyst Professional
+                        Certificate</a
+                      >
+                      — an 8-course program with a 4.7/5 rating and over 50,000
+                      enrollments
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <div class="icon-circle">
+                    <i class="fas fa-layer-group"></i>
+                  </div>
+                </div>
+                <div class="benefit-content">
+                  <h4>Unique Blend of Educational & Technical Backgrounds</h4>
+                  <p>
+                    Dr. Hurley’s diverse educational background combines
+                    expertise in both education and technical disciplines,
+                    providing a well-rounded foundation to guide students in
+                    mastering complex concepts. His credentials include:
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>Ed.D. in Curriculum & Instruction</strong> from
+                      the University of Florida
+                    </li>
+                    <li>
+                      <strong>M.S. in Civil Engineering</strong> from Florida
+                      Atlantic University
+                    </li>
+                    <li>
+                      <strong>B.S. in Physics</strong> from the State University
+                      of New York at Oneonta
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="testimonial-carousel">
-                <div class="testimonial-card">
-                    <img src="images/IvorZimmerman.jpg" alt="Ivor">
-                    <blockquote>
-                        "Dr. Hurley is a fantastic teacher that knew how to inspire his students and get them inspired to participate in normally difficult classes like computer science and calculus. His teaching style makes him open to change and flexible enough to adapt to the needs of every student. I wish I could have him again at Harvard!" 
-                        <span class="author">- Ivor</span>
-                    </blockquote>
-                </div>
-        
-                <div class="testimonial-card">
-                    <img src="images/CaitlinRegan.jpg" alt="Caitlin">
-                    <blockquote>
-                        "Dr. Hurley is a fantastic teacher and tutor. I took two years of math and two years of computer science with him. I was often in his classroom during my free periods because the one-on-one tutoring was incredibly helpful. No other teacher that I’ve had has been able to explain concepts in such a clear and effective way. Dr. Hurley is far and away the best teacher I have ever had; he’s kind, helpful, and devoted to making sure his students succeed, and he knows what he’s talking about."
-                        <span class="author">- Caitlin</span>
-                    </blockquote>
-                </div>
-        
-                <div class="testimonial-card">
-                    <img src="images/ZachAlerte.png" alt="Zach">
-                    <blockquote>
-                        "Dr. Hurley taught me both Pre-Calculus and AP Computer Science&nbsp;A. He not only was a phenomenal teacher, but he also was extremely enthusiastic about both subjects. There never was a dull moment in these classes, and I walked away from them with confidence in my quantitative and coding abilities. I now study Statistics at Harvard and make use of the math and computer science skills that he instilled in me. Learning to code can be a frustrating process, but Dr. Hurley introduced me to the art of programming in the best way I could have imagined."
-                        <span class="author">- Zach</span>
-                    </blockquote>
-                </div>
-        
-                <div class="testimonial-card">
-                    <img src="images/TylerZudans.jpg" alt="Tyler">
-                    <blockquote>
-                        "Dr. Hurley's guidance helped me begin my journey as a programmer with confidence and I earned a 5 on the AP Computer Science exam. His personalized teaching style in Java was memorable, effective, and benefits me to this day as I develop Android apps for work."
-                        <span class="author">- Tyler</span>
-                    </blockquote>
-                </div>
-        
-                <div class="testimonial-card">
-                    <img src="images/SpencerLindenthal.jpg" alt="Spencer">
-                    <blockquote>
-                        "The one thing that I remember and appreciated most about Dr. Hurley as a teacher was his creativity. Whether it was his ability to always try and learn new ways of teaching, or his ability to explain a singular concept in multiple different ways, he always made sure to find a way to teach that would help each and every one of his students understand the material."
-                        <span class="author">- Spencer</span>
-                    </blockquote>
-                </div>
-        
-                <div class="testimonial-card">
-                    <img src="images/BrianBarnett.jpeg" alt="Brian">
-                    <blockquote>
-                        "Admittedly, I did not excel in the fields of mathematics while in high school, but having been one of Dr. Hurley’s students on two different occasions (albeit quite a few years ago), I can honestly say that despite my shortcomings, he provided an environment that fostered curiosity and engagement in a subject so many (including myself) find less than relatable. He did what I thought was impossible – made math fun. His approach is methodical and patient, all the while showing his students how to practically apply classroom teachings in the real world – whether it be through finance, engineering or technology. He certainly made a lasting impact on not only my education, but that of my peers."
-                        <span class="author">- Brian</span>
-                    </blockquote>
-                </div>
-        
-                <div class="testimonial-card">
-                    <img src="images/TaylorTee.jpg" alt="Taylor">
-                    <blockquote>
-                        "I was never very confident with my math skills in high school, but Dr. Hurley’s kind spirit and passion for his students made me believe in myself! I no longer felt scared of judgment when asking questions, and he always made learning fun. If there is one take away from my experience with Dr. Hurley, it’s that great teachers build confidence in the classroom!"
-                        <span class="author">- Taylor</span>
-                    </blockquote>
-                </div>
-        
-                <div class="testimonial-card">
-                    <img src="images/ColeLipkin.jpg" alt="Cole">
-                    <blockquote>
-                        "Dr. Hurley was by far the most impactful teacher I had in high school. Not only was he extremely knowledgeable about the subject, but he also communicated in such a way that was not just clear, but effective in furthering my understanding. More importantly, he demonstrated that he truly cared for his students by going the extra mile whether it was offering late night review sessions before exams, or giving up his lunch to make sure I fully mastered a certain concept. I highly recommend Dr. Hurley to any student needing seeking a tutor, as I believe that he is not only the most qualified, but will be the most successful in delivering the results you are seeking."
-                        <span class="author">- Cole</span>
-                    </blockquote>
-                </div>
-        
-                <div class="testimonial-card">
-                    <img src="images/RichieAppen.jpg" alt="Richie">
-                    <blockquote>
-                        "Dr. Hurley was able to effectively teach a large amount of material to me in a very short period of time. The fact that his Computer Science class was the only one I took and the only experience I had ever had with coding before becoming a Computer Science major in college is proof of that. On top of that he has a great sense of humor and makes coming to class and learning a part of your day to look forward to. I didn't realize how much Dr. Hurley had prepared me for college until way after the fact, I would recommend him if you not only want to learn the material but also enjoy the material."
-                        <span class="author">- Richie</span>
-                    </blockquote>
-                </div>
-        
-                <div class="testimonial-card">
-                    <img src="images/MichaelBurke.png" alt="Michael">
-                    <blockquote>
-                        "Having a teacher like Dr. Hurley in high school was a rare blessing. It's difficult to find educators with the same level of energy and dedication that he has, and it really sparked my passion for what I do in college. Before I took AP Computer Science&nbsp;A under him, I felt lost and didn't know how to realize my passion for working with technology. Now I find myself in my fourth year of being successfully invested in a world renowned program, and I owe him many thanks for it."
-                        <span class="author">- Michael</span>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-        <!-- <section>
-            <h2 class="section-title">Contact Form</h2>
-        </section> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section" id="testimonials">
+        <div class="container">
+          <h2 class="section-title">Testimonials</h2>
+          <p>See what students have to say about Dr. Hurley.</p>
+        </div>
+        <div class="testimonial-carousel">
+          <div class="testimonial-card">
+            <img src="images/TylerZudans.jpg" alt="Tyler" />
+            <blockquote>
+              "Dr. Hurley's guidance helped me begin my journey as a programmer
+              with confidence and I earned a 5 on the AP Computer Science exam.
+              His personalized teaching style in Java was memorable, effective,
+              and benefits me to this day as I develop Android apps for work."
+              <span class="author">- Tyler</span>
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="images/CaitlinRegan.jpg" alt="Caitlin" />
+            <blockquote>
+              "Dr. Hurley is a fantastic teacher and tutor. I took two years of
+              math and two years of computer science with him. I was often in
+              his classroom during my free periods because the one-on-one
+              tutoring was incredibly helpful. No other teacher that I’ve had
+              has been able to explain concepts in such a clear and effective
+              way. Dr. Hurley is far and away the best teacher I have ever had;
+              he’s kind, helpful, and devoted to making sure his students
+              succeed, and he knows what he’s talking about."
+              <span class="author">- Caitlin</span>
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="images/ZachAlerte.png" alt="Zach" />
+            <blockquote>
+              "Dr. Hurley taught me both Pre-Calculus and AP Computer
+              Science&nbsp;A. He not only was a phenomenal teacher, but he also
+              was extremely enthusiastic about both subjects. There never was a
+              dull moment in these classes, and I walked away from them with
+              confidence in my quantitative and coding abilities. I now study
+              Statistics at Harvard and make use of the math and computer
+              science skills that he instilled in me. Learning to code can be a
+              frustrating process, but Dr. Hurley introduced me to the art of
+              programming in the best way I could have imagined."
+              <span class="author">- Zach</span>
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="images/IvorZimmerman.jpg" alt="Ivor" />
+            <blockquote>
+              "Dr. Hurley is a fantastic teacher that knew how to inspire his
+              students and get them inspired to participate in normally
+              difficult classes like computer science and calculus. His teaching
+              style makes him open to change and flexible enough to adapt to the
+              needs of every student. I wish I could have him again at Harvard!"
+              <span class="author">- Ivor</span>
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="images/SpencerLindenthal.jpg" alt="Spencer" />
+            <blockquote>
+              "The one thing that I remember and appreciated most about Dr.
+              Hurley as a teacher was his creativity. Whether it was his ability
+              to always try and learn new ways of teaching, or his ability to
+              explain a singular concept in multiple different ways, he always
+              made sure to find a way to teach that would help each and every
+              one of his students understand the material."
+              <span class="author">- Spencer</span>
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="images/TaylorTee.jpg" alt="Taylor" />
+            <blockquote>
+              "I was never very confident with my math skills in high school,
+              but Dr. Hurley’s kind spirit and passion for his students made me
+              believe in myself! I no longer felt scared of judgment when asking
+              questions, and he always made learning fun. If there is one take
+              away from my experience with Dr. Hurley, it’s that great teachers
+              build confidence in the classroom!"
+              <span class="author">- Taylor</span>
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="images/ColeLipkin.jpg" alt="Cole" />
+            <blockquote>
+              "Dr. Hurley was by far the most impactful teacher I had in high
+              school. Not only was he extremely knowledgeable about the subject,
+              but he also communicated in such a way that was not just clear,
+              but effective in furthering my understanding. More importantly, he
+              demonstrated that he truly cared for his students by going the
+              extra mile whether it was offering late night review sessions
+              before exams, or giving up his lunch to make sure I fully mastered
+              a certain concept. I highly recommend Dr. Hurley to any student
+              needing seeking a tutor, as I believe that he is not only the most
+              qualified, but will be the most successful in delivering the
+              results you are seeking."
+              <span class="author">- Cole</span>
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="images/BrianBarnett.jpeg" alt="Brian" />
+            <blockquote>
+              "Admittedly, I did not excel in the fields of mathematics while in
+              high school, but having been one of Dr. Hurley’s students on two
+              different occasions (albeit quite a few years ago), I can honestly
+              say that despite my shortcomings, he provided an environment that
+              fostered curiosity and engagement in a subject so many (including
+              myself) find less than relatable. He did what I thought was
+              impossible – made math fun. His approach is methodical and
+              patient, all the while showing his students how to practically
+              apply classroom teachings in the real world – whether it be
+              through finance, engineering or technology. He certainly made a
+              lasting impact on not only my education, but that of my peers."
+              <span class="author">- Brian</span>
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="images/RichieAppen.jpg" alt="Richie" />
+            <blockquote>
+              "Dr. Hurley was able to effectively teach a large amount of
+              material to me in a very short period of time. The fact that his
+              Computer Science class was the only one I took and the only
+              experience I had ever had with coding before becoming a Computer
+              Science major in college is proof of that. On top of that he has a
+              great sense of humor and makes coming to class and learning a part
+              of your day to look forward to. I didn't realize how much Dr.
+              Hurley had prepared me for college until way after the fact, I
+              would recommend him if you not only want to learn the material but
+              also enjoy the material."
+              <span class="author">- Richie</span>
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="images/MichaelBurke.png" alt="Michael" />
+            <blockquote>
+              "Having a teacher like Dr. Hurley in high school was a rare
+              blessing. It's difficult to find educators with the same level of
+              energy and dedication that he has, and it really sparked my
+              passion for what I do in college. Before I took AP Computer
+              Science&nbsp;A under him, I felt lost and didn't know how to
+              realize my passion for working with technology. Now I find myself
+              in my fourth year of being successfully invested in a world
+              renowned program, and I owe him many thanks for it."
+              <span class="author">- Michael</span>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
     </main>
     <footer>
-        
-        <p>Ready to invest in excellence? <a href="mailto:contact@drshaunhurley.com?subject=AP Computer Science Tutoring Inquiry" title="Opens email client">
-             Email Dr. Hurley</a> to schedule a session today!</p>
+      <!-- CTA Section -->
+      <section class="">
+        <div class="container">
+          <h2>Ready to Excel in AP Computer Science&nbsp;A?</h2>
+          <p>
+            Join successful students who have earned 5s on their AP exams and
+            gone on to top computer science programs.
+          </p>
+          <div class="cta-buttons">
+
+            <a
+              href="mailto:contact@drshaunhurley.com?subject=AP Computer Science Tutoring Inquiry"
+              class="cta-button"
+              title="Opens email client"
+            >
+              <i class="far fa-envelope"></i> Request a Session</a
+            >
+            <a href="services.html" class="cta-button secondary"
+              >View Programs & Pricing</a
+            >
+          </div>
+        </div>
+      </section>
+
+
     </footer>
-<!-- <div id="cookie-consent-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #222; color: white; padding: 10px; text-align: center;">
-  <p>We use cookies to analyze website traffic and improve your experience. <a href="/privacy-policy.html" style="color: #1e90ff;">Learn more</a>.</p>
-  <button id="accept-cookies" style="background: #1e90ff; color: white; border: none; padding: 10px 15px; cursor: pointer;">Accept</button>
-  <button id="decline-cookies" style="background: #999; color: white; border: none; padding: 10px 15px; cursor: pointer;">Decline</button>
-</div>
 
-<script>
-  document.getElementById('accept-cookies').onclick = function() {
-    document.getElementById('cookie-consent-banner').style.display = 'none';
-    localStorage.setItem('cookieConsent', 'true');
-    loadGoogleAnalytics();
-  };
-  document.getElementById('decline-cookies').onclick = function() {
-    document.getElementById('cookie-consent-banner').style.display = 'none';
-    localStorage.setItem('cookieConsent', 'false');
-  };
-
-  if (localStorage.getItem('cookieConsent') === 'true') {
-    loadGoogleAnalytics();
-    document.getElementById('cookie-consent-banner').style.display = 'none';
-  }
-
-  function loadGoogleAnalytics() {
-    // Google Analytics script
-    (function() {
-      var script = document.createElement('script');
-      script.async = true;
-      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-8BCB8FS2W2';
-      document.head.appendChild(script);
-      script.onload = function() {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-8BCB8FS2W2', { anonymize_ip: true });
-      };
-    })();
-  }
-</script> -->
-</body>
+  </body>
 </html>
