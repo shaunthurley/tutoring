@@ -1098,9 +1098,9 @@ footer a {
   }
 
   .benefit-content h4,
-  /* .service-header h4 {
+  .service-header h4 {
     font-size: 1.2rem;
-  } */
+  }
 
   .benefit-content p,
   .service-content p {
@@ -1806,6 +1806,8 @@ footer a {
 .table-container {
   margin: 2rem 0;
   overflow-x: auto;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
 }
 
 .data-table {
@@ -1936,7 +1938,7 @@ code {
   /* font-family: 'Courier New', monospace; */
   font-size: 0.95em;
   /* color: #188038; */
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 /* 
 :not(h4) code {
@@ -1999,7 +2001,7 @@ code {
   } */
 
   .table-container {
-    margin: 1.5rem -1rem;
+    margin: 1.5rem auto;
   }
 
   .data-table {
