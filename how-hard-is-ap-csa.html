@@ -78,9 +78,8 @@
 
                 <p>
                     Below, we'll first look at what makes AP CSA unique compared to other AP courses, then see how it
-                    stacks up in terms of scores and pass rates, why the class can feel challenging even when it's
-                    manageable, the most common stumbling blocks students face, and a few myths that deserve to be
-                    debunked.
+                    stacks up in terms of scores and pass rates, and why the class can feel challenging even when it's
+                    manageable.
                 </p>
             </div>
         </section>
@@ -331,218 +330,6 @@
 
         <section>
             <div class="container">
-                <h2 class="section-subtitle">Common Stumbling Blocks</h2>
-
-                <p>
-                    After years of working with AP CSA students, I've noticed the same challenges come up again and
-                    again.
-                    Knowing about them in advance can save weeks of confusion. (Don't worry if the details don't make
-                    sense yet — you can always return to this section later if you decide to take AP CSA.)
-                </p>
-
-                <!-- <div class="warning-card info-card"> -->
-                <div>
-                    <h3>The <code>==</code> vs <code>.equals()</code> Confusion:</h3>
-                    <ul>
-                        <li><strong>Core issue:</strong> Students instinctively use <code>==</code> to compare strings
-                            because it
-                            appears logical.</li>
-                        <li><strong>Common mistake:</strong> Students write <code>if(str1 == str2)</code> instead of
-                            <code>if(str1.equals(str2))</code>, accidentally checking whether the two variables point to
-                            the same memory location rather than whether the strings contain the same characters.
-                        </li>
-                        <li><strong>Why it matters:</strong> <code>==</code> checks memory addresses, not string
-                            content, leading to
-                            code that compiles but produces the wrong result.</li>
-                        <li><strong>Mindset shift:</strong> Use <code>.equals()</code> to compare the <em>contents</em>
-                            of
-                            objects. Otherwise,
-                            use the <code>==</code> operator to check whether two variables point to the exact same
-                            object <em>in memory</em>.
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- <div class="warning-card info-card"> -->
-                <div>
-                    <h3>Object References and Null Pointers</h3>
-                    <ul>
-                        <li><strong>Core issue:</strong> Variables don't store objects themselves — they store
-                            <em>references</em> to objects.
-                        </li>
-                        <li><strong>Common mistake:</strong> Students declare <code>Student s;</code> and then try to
-                            use
-                            s before creating the actual object with <code>s = new Student();</code>, which leaves the
-                            variable
-                            pointing to nothing.</li>
-                        <li><strong>Why it matters:</strong> This leads to NullPointerException, one of the most common
-                            runtime errors in AP CSA.</li>
-                        <li><strong>Mindset shift:</strong> Think of variables as <em>arrows pointing to objects</em>,
-                            not boxes
-                            containing them.</li>
-                    </ul>
-                </div>
-
-                <!-- <div class="warning-card info-card"> -->
-                <div>
-                    <h3>Array Indexing Nightmares</h3>
-                    <ul>
-                        <li><strong>Core issue:</strong> Arrays start at index 0, not 1.</li>
-                        <li><strong>Common mistake:</strong> Students try to access index 5 in an array of length 5,
-                            forgetting that the valid indices are 0 through 4.</li>
-                        <li><strong>Why it matters:</strong> Off-by-one and "fencepost" errors cause programs to crash
-                            or produce wrong results.</li>
-                        <li><strong>Mindset shift:</strong> Always remember: for an array of length n, the valid indices
-                            are 0 through n-1.</li>
-                    </ul>
-                </div>
-
-                <!-- <div class="warning-card info-card"> -->
-                <div>
-                    <h3>Recursion Mental Blocks</h3>
-                    <ul>
-                        <li><strong>Core issue:</strong> Functions calling themselves isn't intuitive at first.</li>
-                        <li><strong>Common mistake:</strong> Students forget to include a base case in a recursive
-                            method,
-                            which leads the program to call itself endlessly and crash with a stack overflow.</li>
-                        <li><strong>Why it matters:</strong> Recursive code is elegant but can easily crash a program if
-                            misunderstood.</li>
-                        <li><strong>Mindset shift:</strong> Trust the process — recursion is just breaking a problem
-                            into
-                            smaller versions of itself, <em>as long as there's a clear stopping point</em>.</li>
-                    </ul>
-                </div>
-
-                <!-- <div class="warning-card info-card"> -->
-                <div>
-                    <h3>Paper Coding Challenges</h3>
-                    <ul>
-                        <li><strong>Core issue:</strong> The AP exam requires students to write code by hand, without
-                            IDE
-                            support.</li>
-                        <li><strong>Common mistake:</strong> Students rely on auto-complete or syntax highlighting when
-                            practicing, then struggle on the exam when they have to write code entirely by hand without
-                            those
-                            supports.</li>
-                        <li><strong>Why it matters:</strong> Without practice, even strong coders risk losing points for
-                            repeated syntax errors or overlooked details that an IDE would normally catch (and sometimes
-                            automatically fix).</li>
-                        <li><strong>Mindset shift:</strong> Practice regularly in plain text or on paper to build
-                            fluency
-                            without digital crutches.</li>
-                    </ul>
-                </div>
-
-                <!-- <div class="warning-card info-card"> -->
-                <div>
-                    <h3>FRQ Panic Patterns:</h3>
-                    <ul>
-                        <li><strong>Core issue:</strong> Students struggle to manage free-response questions effectively
-                            under pressure.</li>
-                        <li><strong>Common mistake:</strong> Students give up after part (a) of a free-response question
-                            instead of attempting parts (b) and (c), or they over-engineer simple problems because they
-                            assume
-                            the solution must be more complex than it really is.</li>
-                        <li><strong>Why it matters:</strong> This leaves easy points on the table and lowers overall
-                            scores.
-                        </li>
-                        <li><strong>Mindset shift:</strong> Attempt every part, even if uncertain — graders award
-                            partial
-                            credit generously, and simple answers are often the right ones.</li>
-                    </ul>
-                </div>
-                <!-- </div> -->
-        </section>
-
-        <section class="container">
-            <!-- <div class="container"> -->
-            <h2 class="section-subtitle">Common Myths &amp; Misconceptions</h2>
-
-            <p>
-                Of course, not every obstacle in AP CSA comes from the material itself — many come from the stories
-                students hear before they even step into the class. Let's take a closer look at a few of the most
-                common myths that can make the course seem harder than it really is.
-            </p>
-
-            <div class="myth-card info-card">
-                <h3>Myth: <em>Only programming prodigies should take AP CSA</em></h3>
-                <ul>
-                    <li><strong>Reality:</strong> The course is designed for complete beginners.</li>
-                    <li><strong>Why it matters:</strong> Success depends on practice, curiosity, patience, and
-                        persistence — <em>not</em> prior coding knowledge.</li>
-                    <li><strong>Perspective:</strong> Many of my strongest students started with zero programming
-                        experience.</li>
-                </ul>
-            </div>
-
-            <div class="myth-card info-card">
-                <h3>Myth: <em>You need to memorize the entire Java API</em></h3>
-                <ul>
-                    <li><strong>Reality:</strong> The AP exam provides a <em>Java Quick Reference</em> sheet.</li>
-                    <li><strong>Why it matters:</strong> What's actually tested is your <em>problem-solving
-                            ability</em>,
-                        not rote memorization.</li>
-                    <li><strong>Perspective:</strong> Focus on knowing <em>when</em> and <em>how</em> to use the tools
-                        available,
-                        rather than memorizing syntax.</li>
-                </ul>
-            </div>
-
-            <div class="myth-card info-card">
-                <h3>Myth: <em>AP CSA is one of the hardest AP courses</em></h3>
-                <ul>
-                    <li><strong>Reality:</strong> Pass rates are just below the overall AP average (67% vs 72%).
-                    </li>
-                    <li><strong>Why it matters:</strong> In 2025, ten other subjects had lower pass rates than AP
-                        CSA,
-                        including:
-                        <ul>
-                            <li>AP Latin</li>
-                            <li>AP Music Theory</li>
-                            <li>AP Statistics</li>
-                            <li>AP Computer Science Principles</li>
-                            <li>AP Calculus AB</li>
-                            <li>AP World History</li>
-                            <li>AP Human Geography</li>
-                            <li>AP Art History</li>
-                            <li>AP Macroeconomics</li>
-                            <li>AP Physics 1</li>
-                        </ul>
-                    </li>
-                    <li><strong>Perspective:</strong> The intimidating course name and outdated reputation make it
-                        seem harder than it really is.</li>
-                </ul>
-            </div>
-
-            <div class="myth-card info-card">
-                <h3>Myth: <em>You must take AP Computer Science Principles (AP CSP) first</em></h3>
-                <ul>
-                    <li><strong>Reality:</strong> There are no prerequisite courses required by the College Board.
-                    </li>
-                    <li><strong>Why it matters:</strong> Students regularly succeed in AP CSA without having taken
-                        AP CSP. The two courses focus on different skills — AP CSP is broad, while AP CSA is
-                        Java-focused.</li>
-                    <li><strong>Perspective:</strong> In my experience, whether or not a student took CSP has no
-                        impact on how well they do in CSA.</li>
-                </ul>
-            </div>
-
-            <div class="myth-card info-card">
-                <h3>Myth: <em>AP CSA is only useful if you want to be a programmer</em></h3>
-                <ul>
-                    <li><strong>Reality:</strong> The skills go far beyond coding.</li>
-                    <li><strong>Why it matters:</strong> Logical thinking, problem-solving, and persistence are
-                        transferable to countless fields. In addition, AP CSA can satisfy college requirements, even
-                        for non-CS majors.</li>
-                    <li><strong>Perspective:</strong> Algorithmic thinking applies everywhere — from medicine to
-                        business to everyday problem-solving.</li>
-                </ul>
-            </div>
-            <!-- </div> -->
-        </section>
-
-        <section>
-            <div class="container">
                 <h2 class="section-subtitle">Your Path Forward</h2>
                 <p>
                     AP Computer Science&nbsp;A isn't inherently harder than learning any new skill — it just requires
@@ -559,8 +346,7 @@
             </div>
         </section>
     </main>
-</body>
-<footer>
+    <footer>
     <!-- CTA Section -->
     <section class="footer-section">
         <div class="container">
@@ -583,5 +369,7 @@
         </div>
     </section>
 </footer>
+</body>
+
 
 </html>
